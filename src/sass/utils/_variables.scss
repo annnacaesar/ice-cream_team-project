@@ -1,0 +1,17 @@
+:root {
+	--primery-text-color: #000000;
+	--secondary-text-color: #ffffff;
+	--third-text-color: #FFA5BA;
+	--fours-text-color: #907E82;
+	--accent-color: #D41443;
+
+	--header-background-color: #FFB8CA;
+	--secondary-background-color: #FFF5F6;
+
+	--transition-duration: 250ms;
+	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$mobile: "480px";
+$tablet: "768px";
+$desktop: "1200px";
