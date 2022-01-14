@@ -1,0 +1,249 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.contacts {
+  background-color: #fff5f6;
+  padding: 50px;
+}
+.contacts__list {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.contacts__item {
+  padding: 43px 20px;
+
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+  // @media screen and (max-width:479px)
+  // {
+  //   width: 100%;
+  // }
+
+  @media screen and (min-width: 320px) {
+    // flex-basis: calc(100% / 3 - 30px);
+    width: 220px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 767px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+.contacts__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 54px;
+  }
+}
+
+.contacts__line {
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin: 25px 0px;
+}
+.contacts__object {
+  color: #ffffff;
+  // font-family: DMSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 3px 25px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.contacts__object--first {
+  background-color: #f0d1a5;
+}
+.contacts__object--second {
+  background-color: #c2e297;
+}
+.contacts__town {
+  // font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+  letter-spacing: 0.04em;
+  display: block;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contacts__discription {
+  // font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  color: #907e82;
+}
+.contacts__worktime {
+  margin-bottom: 10px;
+}
+.contacts__worktime--margin {
+  margin-bottom: 0px;
+}
+.contacts__day {
+  display: block;
+  // font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* identical to box height, or 22px */
+  color: #000000;
+  margin-bottom: 5px;
+}
+.contacts__time {
+  display: block;
+  color: #ffa5ba;
+  // font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* identical to box height, or 22px */
+}
+.contacts__link {
+  display: block;
+  color: #907e82;
+  //   font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  text-decoration: none;
+}
+.contacts__contacts:not(:last-child) {
+  margin-bottom: 5px;
+}
+.button {
+  display: block;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  padding: 14px 37px;
+  border-radius: 22px;
+  border: none;
+}
+.button-red:hover,
+.button-red:focus {
+  background-color: #e21f50;
+  color: #ecebeb;
+}
+.button-white:hover,
+.button-white:focus {
+  background-color: #ecebeb;
+  color: #d41443;
+}
+
+.button-hero {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+  padding: 8px 15px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.button-red {
+  background-color: #d41342;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-white {
+  background-color: #ffffff;
+  color: #d41443;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-button-list {
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.contacts-button-item {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
