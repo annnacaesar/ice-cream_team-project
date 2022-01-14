@@ -1,58 +1,31 @@
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--text-color);
-  background-color: var(--white-color);
-}
-body.modal-open {
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-.container {
-  width: 100%;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
 
 .contacts {
+    display: flex;
+    justify-content: center;
   background-color: #fff5f6;
   padding: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image:  linear-gradient(0deg, rgba(255,245,246,1) 88%, rgba(255,255,255,1) 88%);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(255,245,246,1) 90%, rgba(255,255,255,1) 90%);
+    }
+  
+    @media screen and (min-width:768px){
+        background-image:  linear-gradient(0deg, rgba(255,245,246,1) 70%, rgba(255,255,255,1) 70%);
+         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(255,245,246,1) 70%, rgba(255,255,255,1) 72%);
+    }
+    }
+  @media screen and (min-width: 1200px) {
+    
+    background-image:  url(../images/contacts-bg.png), linear-gradient(0deg, rgba(255,245,246,1) 72%, rgba(255,255,255,1) 72%);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg@2x.png), linear-gradient(0deg, rgba(255,245,246,1) 72%, rgba(255,255,255,1) 72%);
+    }
+  }
 }
 .contacts__list {
   @media screen and (min-width: 767px) {
@@ -105,7 +78,7 @@ li {
 }
 .contacts__object {
   color: #ffffff;
-  // font-family: DMSans;
+  font-family: DMSans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -235,15 +208,24 @@ li {
 
 .contacts-button-list {
   @media screen and (min-width: 767px) {
-    flex-direction: row;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
+   
   }
 }
 .contacts-button-item {
-  display: flex;
-  justify-content: center;
+  
   @media screen and (min-width: 767px) {
-    flex-direction: row;
-    justify-content: center;
+    display: inline-block;
   }
+  
 }
+.contacts-button-item:not(:last-child){
+    @media screen and (max-width:767px){
+        margin-bottom: 10px;
+    }
+    @media screen and (min-width:768px){
+        margin-right: 15px;
+    }
+}
+
