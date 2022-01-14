@@ -1,0 +1,25 @@
+.footer {
+  background-color: #fff5f6;
+
+  &__social-icon {
+    fill: currentColor;
+    width: 18.82px;
+    height: 18.82px;
+  }
+
+  &__social-link {
+    border-radius: 50%;
+    border: 6.59px solid #fea5bb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #fea5bb;
+
+    &:hover,
+    &:focus {
+      background-color: #d41443;
+      border-color: #d41443;
+    }
+  }
+}
