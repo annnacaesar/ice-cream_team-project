@@ -1,37 +1,38 @@
 .contacts {
   display: flex;
   justify-content: center;
-  background-color: #fff5f6;
+  background-color: var(--secondary-background-color);
   padding: 50px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255, 255, 255, 1) 88%);
+  background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 90%, rgba(255, 255, 255, 1) 90%);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 90%, rgba(255, 255, 255, 1) 90%);
   }
 
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 70%, rgba(255, 255, 255, 1) 70%);
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(
         0deg,
-        rgba(255, 245, 246, 1) 70%,
-        rgba(255, 255, 255, 1) 72%
+        rgba(255, 245, 246, 1) 80%,
+        rgba(255, 255, 255, 1) 80%
       );
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/contacts-bg.png),
-      linear-gradient(0deg, rgba(255, 245, 246, 1) 72%, rgba(255, 255, 255, 1) 72%);
+      linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts-bg@2x.png),
-        linear-gradient(0deg, rgba(255, 245, 246, 1) 72%, rgba(255, 255, 255, 1) 72%);
+        linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
     }
   }
 }
 .contacts__list {
-  @media screen and (min-width: 767px) {
+  
+  @media screen and (min-width: $tablet) {
     display: flex;
     // flex-wrap: wrap;
     justify-content: center;
@@ -42,7 +43,7 @@
   padding: 43px 20px;
 
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--secondary-text-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -50,24 +51,24 @@
     // flex-basis: calc(100% / 3 - 30px);
     width: 220px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 330px;
   }
 }
 
 .contacts__item:not(:last-child) {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 20px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 }
 .contacts__item:last-child {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     margin-bottom: 54px;
   }
 }
@@ -75,11 +76,11 @@
 .contacts__line {
   width: 100%;
   height: 1px;
-  background-color: #e1e1e1;
+  background-color: var(--line);
   margin: 25px 0px;
 }
 .contacts__object {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-family: DMSans;
   font-style: normal;
   font-weight: 500;
@@ -107,7 +108,7 @@
   /* or 22px */
   letter-spacing: 0.04em;
   display: block;
-  color: #000000;
+  color: var(--primery-text-color);
   margin-bottom: 10px;
 }
 .contacts__discription {
@@ -117,7 +118,7 @@
   font-size: 12px;
   line-height: 1.5;
   /* or 150% */
-  color: #907e82;
+  color: var(--fours-text-color);
 }
 .contacts__worktime {
   margin-bottom: 10px;
@@ -132,101 +133,53 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  /* identical to box height, or 22px */
-  color: #000000;
+  color: var(--primery-text-color);
   margin-bottom: 5px;
 }
 .contacts__time {
   display: block;
-  color: #ffa5ba;
+  color: var(--third-text-color);
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  /* identical to box height, or 22px */
+ 
 }
 .contacts__link {
   display: block;
-  color: #907e82;
-  //   font-family: DM Sans;
+  color: var(--fours-text-color);
+    font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  /* or 150% */
+
   text-decoration: none;
 }
 .contacts__data:not(:last-child) {
   margin-bottom: 5px;
 }
-.button {
-  display: block;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-  padding: 14px 37px;
-  border-radius: 22px;
-  border: none;
-}
-.button-red:hover,
-.button-red:focus {
-  background-color: #e21f50;
-  color: #ecebeb;
-}
-.button-white:hover,
-.button-white:focus {
-  background-color: #ecebeb;
-  color: #d41443;
-}
 
-.button-hero {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  border-radius: 20px;
-  padding: 8px 15px;
-  @media screen and (min-width: 1200px) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-  }
-}
-
-.button-red {
-  background-color: #d41342;
-  color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-white {
-  background-color: #ffffff;
-  color: #d41443;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .contacts-button-group {
   align-items: center;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 .contacts-button {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet) {
     display: inline-block;
   }
 }
 .contacts-button:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 15px;
   }
 }
