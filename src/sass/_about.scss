@@ -1,0 +1,65 @@
+.about{
+    background-color: var(--secondary-background-color);
+    padding-top: 125px;
+    padding-bottom: 39px;
+    display: flex;
+    justify-content: center;
+
+}
+.about-label{
+    display: flex;
+    justify-content: center;
+}
+.about-h{
+    display: flex;
+    justify-content: center;
+}
+.about-milk{
+    margin-bottom: 17px;
+}
+
+.about-cow{
+    display: flex;
+    justify-content: center;
+}
+
+.about-text{
+    margin-top: 46px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 17px;
+
+}
+
+.about-text-top{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+    color: var(--primery-text-color);
+}
+
+.about-text-bottom{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 47px;
+    color: var(--fours-text-color);
+
+
+}
+
+.about-button{
+    margin-left: 50px;
+}
+
+
+
+//     background-image: url(../images/about-bg-milk-mob.png);
+// 	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+// 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+// 			url("../images/about-bg-milk-mob@2x.png");
+// }
+// background-repeat: no-repeat;       
+// background-position: bottom; 
+// background-size: contain;
