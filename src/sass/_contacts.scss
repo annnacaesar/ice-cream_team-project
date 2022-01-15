@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   background-color: var(--secondary-background-color);
-  padding: 50px;
+  padding-top: 86px;
+  padding-bottom: 113px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -21,6 +22,7 @@
       );
     }
   }
+
   @media screen and (min-width: $desktop) {
     background-image: url(../images/contacts-bg.png),
       linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
@@ -81,7 +83,7 @@
 }
 .contacts__object {
   color: var(--secondary-text-color);
-  font-family: DMSans;
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
