@@ -84,7 +84,7 @@
             justify-content: space-around;
 
             background-image: url(../images/about-bg-milk.png);
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             height: 534px;
             margin-left: -15px;
@@ -179,9 +179,12 @@
 	}
 }
 
-.about-button:focus,
-.about-button:hover{
+.about-button.button:focus,
+.about-button.button:hover{
 background-color: var(--accent-color);
 color: var(--secondary-text-color);
 border: var(--accent-color);
+transition-property:background-color, color;
+transition-duration: var(--transition-duration);
+transition-timing-function: var(--timing-function);
 }
