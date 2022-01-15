@@ -1,24 +1,16 @@
 .button {
   display: block;
+  height: 44px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.28;
-  padding: 14px 37px;
+  padding: 0px 37px;
   border-radius: 22px;
   border: none;
 }
-.button-red:hover,
-.button-red:focus {
-  background-color: var(--button-bgcolor-hover);
-  color: var(--button-color-hover);
-}
-.button-white:hover,
-.button-white:focus {
-  background-color: var(--button-color-hover);
-  color: var(--accent-color);
-}
+
 
 .button-hero {
   font-family: inherit;
@@ -45,4 +37,21 @@
   color: var(--accent-color);
   transition: background-color var(--transition-duration) var(--timing-function),
     color var(--transition-duration) var(--timing-function);
+}
+.button-red:hover,
+.button-red:focus {
+  background-color: var(--button-bgcolor-hover);
+}
+.button-white:hover,
+.button-white:focus {
+  background-color: var(--button-color-hover);
+  color: var(--accent-color);
+}
+.button__icon-red {
+  fill: var(--secondary-text-color);
+   margin-left: 13px;
+}
+.button__icon-white {
+  margin-left: 13px;
+  fill: var(--accent-color);
 }
