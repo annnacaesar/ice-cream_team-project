@@ -34,9 +34,9 @@
       margin-bottom: 120px;
     }
 
-    // @media screen and (min-width: $desktop) {
-    //   margin-bottom: 107px;
-    // }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 107px;
+    }
   }
 
   &__slogan {
