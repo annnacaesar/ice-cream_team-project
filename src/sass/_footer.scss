@@ -25,6 +25,21 @@
     );
   }
 
+  &__container {
+    padding-right: 20px;
+    padding-left: 22px;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-right: 116px;
+      padding-left: 114px;
+    }
+  }
+
   &__top {
     margin-bottom: 65px;
 
