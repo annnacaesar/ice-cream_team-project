@@ -4,6 +4,19 @@
     padding-bottom: 39px;
     display: flex;
     justify-content: center;
+
+
+
+      @media screen and (max-width: 767px) {
+        background-image: url(../images/about-bg-milk-mob.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 90% ;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image:  url("../images/about-bg-milk-mob@2x.png");
+          }
+	}
+
     @media screen and (min-width: $tablet) {
     padding-top: 130px;
     padding-bottom: 66px;
@@ -11,10 +24,20 @@
     @media screen and (min-width: $desktop) {
         padding-top: 125px;
         padding-bottom: 39px;
+
+        background-image: url(../images/about-bg-milk.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-left: -15px;
+        margin-right: -15px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image:  url("../images/about-bg-milk@2x.png");
+          }
 	}
 }
 
-.about-label{
+.about__label{
     font-family: Titan One;
     font-size: 18px;
     font-style: normal;
@@ -36,7 +59,7 @@
         }
 }
 
-.about-h{
+.about__h{
     font-family: Titan One;
     font-size: 34px;
     font-style: normal;
@@ -60,47 +83,32 @@
         }
 }
 
-.about-milk{
+.about__milk{
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 767px) {
-        background-image: url(../images/about-bg-milk-mob.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50% 90% ;
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image:  url("../images/about-bg-milk-mob@2x.png");
-          }
-    }
+
     @media screen and (min-width: $tablet) {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
         }
         @media screen and (min-width: $desktop) {
-            display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content:space-evenly;
 
-            background-image: url(../images/about-bg-milk.png);
-            background-size: contain;
-            background-position: center;
-            height: 534px;
-            margin-left: -15px;
-            margin-right: -15px;
-            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                background-image:  url("../images/about-bg-milk@2x.png");
-              }
         }
     }
 
 
-.about-cow{
+.about__cow{
     display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 280px;
+    @media screen and (min-width: $mobile) {
+		width: 280px;
+	}
     @media screen and (min-width: $tablet) {
     min-width: 340px;
 	}
@@ -109,7 +117,7 @@
 	}
 }
 
-.about-text{
+.about__text{
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
@@ -118,7 +126,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 220px;
+    width: 220px;
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
@@ -126,7 +134,7 @@
         margin-top: 0;
         padding-right: 0;
         padding-left: 0;
-        min-width: 340px;
+        width: 340px;
         align-items: flex-start;
         }
         @media screen and (min-width: $desktop) {
@@ -136,7 +144,7 @@
         }
     }
 
-.about-text-top{
+.about__text-top{
     margin-bottom: 28px;
     color: var(--primery-text-color);
 
@@ -153,10 +161,9 @@
 }
 
 
-.about-text-bottom{
+.about__text-bottom{
     color: var(--fours-text-color);
     margin-bottom: 26px;
-
         @media screen and (min-width: $tablet) {
         margin-bottom: 62px;
 	}
@@ -165,11 +172,11 @@
 	}
 }
 
-.about-text-bottom-up{
+.about__text-bottom-up{
     margin-bottom: 20px;
     @media screen and (max-width: 767px) {
     
-        max-width: 320px;
+        // max-width: 320px;
 	}
     @media screen and (min-width: $tablet) {
         margin-bottom: 25px;
@@ -179,8 +186,8 @@
 	}
 }
 
-.about-button.button:focus,
-.about-button.button:hover{
+.about__button.button:focus,
+.about__button.button:hover{
 background-color: var(--accent-color);
 color: var(--secondary-text-color);
 border: var(--accent-color);
