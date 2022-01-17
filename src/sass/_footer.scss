@@ -127,7 +127,7 @@
 
   &__social-list {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin-bottom: 46px;
 
     @media screen and (min-width: $desktop) {
