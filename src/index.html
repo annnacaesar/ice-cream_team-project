@@ -40,6 +40,8 @@
     </main>
 
     <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/button-up.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
@@ -61,5 +63,24 @@
       });
     </script>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script> 
+    <script> 
+
+      jQuery(document).ready(function() {
+        var btn = $('#button');  
+        $(window).scroll(function() {     
+          if ($(window).scrollTop() > 300) {
+             btn.addClass('show');
+           } else {
+             btn.removeClass('show');
+           }
+         });
+         btn.on('click', function(e) {
+           e.preventDefault();
+           $('html, body').animate({scrollTop:0}, '300');
+         });
+      });
+      </script> 
   </body>
 </html>
