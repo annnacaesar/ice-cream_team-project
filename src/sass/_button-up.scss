@@ -7,8 +7,8 @@
 	border-radius: 50%;   
 	margin: 30px;   
 	position: fixed;   
-	bottom: 30px;   
-	right: 30px;   
+	bottom: 15px;   
+	right: 15px;   
 	transition: background-color .3s;   
 	z-index: 1000; 
 	padding: 10px 14px;
@@ -16,6 +16,10 @@
 	opacity .5s, visibility .5s;
 	opacity: 0;
 	visibility: hidden;
+	@media screen and (min-weight: $tablet) {
+		bottom: 30px;   
+	right: 30px;  
+	}
 } 
 .button-up.show {
 	opacity: 1;
