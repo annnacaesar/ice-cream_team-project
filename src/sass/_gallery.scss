@@ -1,6 +1,6 @@
 .gallery {
-  padding-top: 80px;
   padding-bottom: 80px;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 245, 246, 1) 60%);
 }
 
 .gallery__container {
@@ -102,9 +102,11 @@
   // grid-gap: 7px;
   grid-gap: 7px;
 }
-
 .gallery__item-wrap {
   width: 40px;
+  border-radius: 20%;
+  border: 1px solid transparent;
+  overflow: hidden;
   @media (min-width: 768px) {
     width: 90px;
   }
@@ -114,6 +116,9 @@
 }
 .gallery__item-wrap--big {
   width: 87px;
+  border-radius: 20%;
+  border: 1px solid transparent;
+  overflow: hidden;
   @media (min-width: 768px) {
     width: 187px;
   }
