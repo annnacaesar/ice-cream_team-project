@@ -106,6 +106,7 @@
     justify-content: center;
     flex-direction: column;
     max-width: 280px;
+    height: auto;
     @media screen and (min-width: $mobile) {
 		width: 280px;
 	}
