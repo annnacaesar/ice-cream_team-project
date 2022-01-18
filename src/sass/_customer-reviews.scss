@@ -17,17 +17,19 @@
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
-    max-width: 280px;
+    width: 100%;
     padding: 70px 50px 20px 50px;
+    margin-top: 29px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 620px;
     padding: 30px 40px;
+    margin-top: 19px;
   }
   @media screen and (min-width: 1200px) {
     width: 926px;
     padding: 32px 50px;
-    margin-top: 29px;
+    margin-top: 15px;
   }
 }
 
@@ -110,15 +112,6 @@
   bottom: -40px;
 }
 
-.slider__eclipes-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 18px;
-  margin-top: 30px;
-}
-.slider__eclipes:not(:last-child) {
-  margin-right: 10px;
-}
 .slider__user-name {
   margin-top: 66px;
   margin-bottom: 30px;
@@ -143,5 +136,9 @@
   background-image: url(../images/customer_reviews.png);
   background-repeat: no-repeat;
   background-position: center;
-  color: #d31342;
+  color: rgba(211, 19, 66, 0);
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
 }
