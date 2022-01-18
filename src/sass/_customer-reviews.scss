@@ -12,14 +12,17 @@
 
 .slider__text-general-wrap {
   background-color: #fafafa;
+
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
     max-width: 280px;
+    padding: 70px 50px 20px 50px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 620px;
+    padding: 30px 40px;
   }
   @media screen and (min-width: 1200px) {
     width: 926px;
@@ -36,6 +39,7 @@
 .slider__text {
   display: block;
   position: relative;
+  z-index: 2;
 
   margin-left: auto;
   margin-right: auto;
