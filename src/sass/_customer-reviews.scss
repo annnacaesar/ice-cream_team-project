@@ -1,17 +1,19 @@
-.slider-item-wrap {
+.slider__item-wrap {
   background-repeat: no-repeat;
   text-align: center;
 }
-.slider-img {
+.slider__img {
   margin-left: auto;
   margin-right: auto;
 }
 .slick-dots {
+  left: 0;
 }
-.slider-text-wrap {
+
+.slider__text-general-wrap {
+  background-color: #fafafa;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 29px;
 
   @media screen and (max-width: 767px) {
     max-width: 280px;
@@ -21,12 +23,19 @@
   }
   @media screen and (min-width: 1200px) {
     width: 926px;
+    padding: 32px 50px;
+    margin-top: 29px;
   }
 }
-.slider-text {
+
+.slider__text-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__text {
   display: block;
   position: relative;
-  z-index: 2;
 
   margin-left: auto;
   margin-right: auto;
@@ -63,30 +72,51 @@
     );
   }
 }
-.slider-text::before {
+.slider__text::before {
   content: '';
   width: 54px;
   height: 40px;
 
   position: absolute;
   top: -15px;
-  z-index: 1;
+  left: -30px;
 }
-.slider-text::before {
+.slider__text::before {
   display: block;
-  margin-right: 10px;
+
   background-image: url(../images/“.png);
+  z-index: -1;
 }
-.slider-eclipes-wrap {
+
+.slider__text::after {
+  display: block;
+
+  background-image: url(../images/customer-reviews-ellipse.png);
+}
+
+.slider__text::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+
+  bottom: -40px;
+}
+
+.slider__eclipes-wrap {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
   margin-top: 30px;
 }
-.slider-eclipes:not(:last-child) {
+.slider__eclipes:not(:last-child) {
   margin-right: 10px;
 }
-.slider-user-name {
+.slider__user-name {
+  margin-top: 66px;
   margin-bottom: 30px;
   font-family: DM Sans;
   font-style: normal;
@@ -103,4 +133,11 @@
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
+}
+
+.slick-dots li.slick-active button:before {
+  background-image: url(../images/customer_reviews.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #d31342;
 }
