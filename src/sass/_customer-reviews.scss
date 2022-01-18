@@ -95,21 +95,17 @@
 }
 
 .slider__text::after {
-  display: block;
-
-  background-image: url(../images/customer-reviews-ellipse.png);
-}
-
-.slider__text::after {
   content: '';
   width: 32px;
   height: 4px;
+  display: block;
 
   position: absolute;
   right: 50%;
+  bottom: -55px;
   transform: translateX(50%);
 
-  bottom: -40px;
+  background-image: url(../images/customer-reviews-ellipse.png);
 }
 
 .slider__user-name {
