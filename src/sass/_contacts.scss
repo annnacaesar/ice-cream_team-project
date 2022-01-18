@@ -170,7 +170,7 @@
 }
 
 
-.contacts-button-group {
+.contacts__button-group {
   display: flex;
   flex-direction: column;
   
@@ -182,12 +182,12 @@
     align-items: center;
   }
 }
-.contacts-button {
+.contacts__button {
   @media screen and (min-width: $tablet) {
     display: inline-block;
   }
 }
-.contacts-button:not(:last-child) {
+.contacts__button:not(:last-child) {
   @media screen and (max-width: $tablet) {
     margin-bottom: 10px;
   }
@@ -195,3 +195,11 @@
     margin-right: 15px;
   }
 }
+.contacts__button-mobile{
+  @media screen and (max-width:$tablet){
+    width:210px;    
+  }
+ 
+
+}
+
