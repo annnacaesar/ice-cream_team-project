@@ -52,8 +52,7 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
       integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $('.slider__multiple-items').slick({
@@ -66,22 +65,5 @@
     <script defer src="js/mobile-menu.js"></script>
     <script defer src="js/modal.js"></script>
     <script defer src="js/jquery.min.js"></script>
-    <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>  -->
-    <script>
-      jQuery(document).ready(function () {
-        var btn = $('#button');
-        $(window).scroll(function () {
-          if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-          } else {
-            btn.removeClass('show');
-          }
-        });
-        btn.on('click', function (e) {
-          e.preventDefault();
-          $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-      });
-    </script>
   </body>
 </html>
