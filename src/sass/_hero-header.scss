@@ -33,6 +33,11 @@
   }
 }
 
+.button__link {
+  color: inherit;
+}
+
+
 .header {
   @media screen and (min-width: 320px) {
     background: #ffb8ca;
