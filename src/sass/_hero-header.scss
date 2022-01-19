@@ -1,7 +1,5 @@
 .header__container .button {
-  @media screen and (min-width: 320px) {
     display: none;
-  }
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -9,9 +7,7 @@
 }
 
 .hero__pre-button .button {
-  @media screen and (min-width: 320px) {
     height: 24px;
-  }
   // @media screen and (min-width: 768px) {
   //   height: 24px;
   // }
@@ -20,10 +16,8 @@
   }
 }
 .hero__button-btn:not(:last-child) {
-  @media screen and (min-width: 320px) {
     margin-right: 8px;
     padding-bottom: 160px;
-  }
   @media screen and (min-width: 768px) {
     margin-right: 8px;
     padding-bottom: 0;
@@ -39,10 +33,9 @@
 
 
 .header {
-  @media screen and (min-width: 320px) {
     background: #ffb8ca;
     padding-top: 6px;
-  }
+  
   @media screen and (min-width: 768px) {
     background: #ffb8ca;
     padding-top: 37px;
@@ -78,9 +71,8 @@
   }
 
   &__list {
-    @media screen and (min-width: 320px) {
       display: none;
-    }
+    
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -150,12 +142,10 @@
   background: #ffb8ca;
 
   &__container {
-    @media screen and (min-width: 320px) {
       background-image: url(/images/hero-icecream-tab.png), url(/images/hero-elipse-big.png);
       background-repeat: no-repeat;
       background-position: 50% 100%, 50% 50%;
       background-size: 171px 410px, 346px 344px;
-    }
 
     @media screen and (min-width: 768px) {
       background-image: url(/images/hero-icecream-tab.png), url(/images/hero-girl-tab.png),
@@ -175,10 +165,8 @@
   }
 
   &__pre-text {
-    @media screen and (min-width: 320px) {
       padding-top: 137px;
       width: 218px;
-    }
     @media screen and (min-width: 768px) {
       padding-top: 15px;
       width: 162px;
@@ -190,7 +178,6 @@
   }
 
   &__text {
-    @media screen and (min-width: 320px) {
       font-family: Titan One;
       font-style: normal;
       font-weight: normal;
@@ -199,7 +186,6 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #ffffff;
-    }
     @media screen and (min-width: 768px) {
       font-family: Titan One;
       font-style: normal;
@@ -223,7 +209,6 @@
   }
 
   &__big-text {
-    @media screen and (min-width: 320px) {
       font-family: Titan One;
       font-style: normal;
       font-weight: normal;
@@ -232,7 +217,6 @@
       /* or 46px */
       text-transform: uppercase;
       color: #d41443;
-    }
 
     @media screen and (min-width: 768px) {
       font-family: Titan One;
@@ -289,9 +273,7 @@
   // }
 
   &__box-container {
-    @media screen and (min-width: 320px) {
       display: none;
-    }
     @media screen and (min-width: 768px) {
       width: 51px;
       height: 43px;
@@ -365,10 +347,8 @@
   }
 
   &__pre-button {
-    @media screen and (min-width: 320px) {
       margin-top: 19px;
       display: flex;
-    }
     @media screen and (min-width: 768px) {
       margin-top: 20px;
       display: flex;
@@ -380,7 +360,6 @@
   }
 
   &__button-products {
-    @media screen and (min-width: 320px) {
       font-family: DM Sans;
       font-style: normal;
       font-weight: normal;
@@ -399,7 +378,6 @@
       border-radius: 20px;
       justify-content: center;
       border: none;
-    }
     @media screen and (min-width: 768px) {
       font-family: DM Sans;
       font-style: normal;
@@ -448,7 +426,6 @@
   }
 
   &__button {
-    @media screen and (min-width: 320px) {
       font-family: DM Sans;
       font-style: normal;
       font-weight: normal;
@@ -466,7 +443,6 @@
       border-radius: 20px;
       justify-content: center;
       border: none;
-    }
     @media screen and (min-width: 768px) {
       font-family: DM Sans;
       font-style: normal;
@@ -525,9 +501,7 @@
   }
 
   &__pre-title {
-    @media screen and (min-width: 320px) {
       display: none;
-    }
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -611,9 +585,8 @@
   }
 
   &__modal {
-    @media screen and (min-width: 320px) {
-      width: 100vw;
-      height: 100vh;
+    width: 100%;
+      height: 100%;
       background-color: #e17992;
       position: fixed;
       top: 0;
@@ -628,12 +601,12 @@
       transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
       transform: translateX(0);
       &.is-hidden {
-        transform: translateX(100%);
+        transform: translateX(110%);
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
       }
-    }
 
     @media screen and (min-width: 768px) {
       width: 100vw;
@@ -661,28 +634,27 @@
   }
 
   &__button {
-    @media screen and (min-width: 320px) {
-      width: 209px;
-      height: 44px;
-      background: #ffffff;
-      border-radius: 22px;
-      border: none;
-      align-items: center;
-      justify-content: center;
+  width: 209px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  align-items: center;
+  justify-content: center;
 
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-      color: #d41443;
-      margin-bottom: 32px;
-      margin-top: 60px;
-    }
+  color: #d41443;
+  margin-bottom: 32px;
+  margin-top: 60px;
+
     @media screen and (min-width: 768px) {
       width: 186px;
       height: 44px;
@@ -789,9 +761,8 @@
 }
 
 .mobile-menu {
-  @media screen and (min-width: 320px) {
     margin-right: 0px;
-  }
+  
   @media screen and (min-width: 768px) {
     margin-right: 15px;
   }
