@@ -55,10 +55,10 @@
   }
 
   &__slogan {
-    padding-bottom: 43px;
+    margin-bottom: 43px;
 
     @media screen and (min-width: $tablet) {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
