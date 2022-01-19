@@ -34,8 +34,9 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 6px 15px;
   @media screen and (min-width: $desktop) {
+    padding: 10px 15px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
