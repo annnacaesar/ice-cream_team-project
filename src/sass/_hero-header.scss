@@ -29,7 +29,38 @@
 
 .button__link {
   color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+  padding: 8px 15px;
+  @media screen and (min-width: $desktop) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
+
+.button__link.button-red {
+  color: var(--secondary-text-color);
+    &:hover,
+    &:focus {
+      background-color: var(--button-bgcolor-hover);
+    }
+}
+
+.button__link.button-white {
+  background-color: var(--secondary-text-color);
+  color: var(--accent-color);
+  transition: background-color var(--transition-duration) var(--timing-function),
+    color var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--button-color-hover);
+      color: var(--accent-color);
+    }
+  }
 
 .header {
   background: #ffb8ca;
