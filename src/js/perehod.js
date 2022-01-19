@@ -1,9 +1,15 @@
 
-$("a[href*=#]").on("click", function (e) {
-  var anchor = $(this);
-  $('html, body').stop().animate({
-  scrollTop: $(anchor.attr('href')).offset().top
-  }, 777);
-  e.preventDefault();
-  return false;
-  });
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
