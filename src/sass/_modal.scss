@@ -26,12 +26,8 @@
   /*  Установаем ширину окна  */
   width: 100%;
   max-width: 500px;
-  @media screen and (min-width: $tablet) {
-    width: 600px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 800px;
-  }
+  
+  
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -180,3 +176,8 @@ modal__cross:focus {
   border: 1px solid var(--accent-color);
 }
 
+.modal__button{
+  width:  160px ;
+  align-items: center;
+  margin: 0 auto;
+}

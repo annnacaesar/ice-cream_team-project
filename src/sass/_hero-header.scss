@@ -141,10 +141,11 @@
   background: #ffb8ca;
 
   &__container {
-    background-image: url(/images/hero-icecream-tab.png), url(/images/hero-elipse-big.png);
-    background-repeat: no-repeat;
-    background-position: 75% 100%, 50% 50%;
-    background-size: 171px 410px, 346px 344px;
+
+      background-image: url(/images/hero-icecream-tab.png), url(/images/hero-elipse-big.png);
+      background-repeat: no-repeat;
+      background-position: 85% 100%, 120% 50%;
+      background-size: 171px 410px, 346px 344px;
 
     @media screen and (min-width: 768px) {
       background-image: url(/images/hero-icecream-tab.png), url(/images/hero-girl-tab.png),
