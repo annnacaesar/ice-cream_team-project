@@ -652,7 +652,7 @@
       transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
       transform: translateX(0);
       &.is-hidden {
-        transform: translateX(100%);
+        transform: translateX(110%);
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
