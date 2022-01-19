@@ -1,5 +1,5 @@
 .header__container .button {
-    display: none;
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -7,7 +7,7 @@
 }
 
 .hero__pre-button .button {
-    height: 24px;
+  height: 24px;
   // @media screen and (min-width: 768px) {
   //   height: 24px;
   // }
@@ -16,8 +16,8 @@
   }
 }
 .hero__button-btn:not(:last-child) {
-    margin-right: 8px;
-    padding-bottom: 160px;
+  margin-right: 8px;
+  padding-bottom: 160px;
   @media screen and (min-width: 768px) {
     margin-right: 8px;
     padding-bottom: 0;
@@ -31,11 +31,10 @@
   color: inherit;
 }
 
-
 .header {
-    background: #ffb8ca;
-    padding-top: 6px;
-  
+  background: #ffb8ca;
+  padding-top: 6px;
+
   @media screen and (min-width: 768px) {
     background: #ffb8ca;
     padding-top: 37px;
@@ -71,8 +70,8 @@
   }
 
   &__list {
-      display: none;
-    
+    display: none;
+
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -142,6 +141,7 @@
   background: #ffb8ca;
 
   &__container {
+
       background-image: url(/images/hero-icecream-tab.png), url(/images/hero-elipse-big.png);
       background-repeat: no-repeat;
       background-position: 85% 100%, 120% 50%;
@@ -165,8 +165,8 @@
   }
 
   &__pre-text {
-      padding-top: 137px;
-      width: 218px;
+    padding-top: 137px;
+    width: 218px;
     @media screen and (min-width: 768px) {
       padding-top: 15px;
       width: 162px;
@@ -178,14 +178,14 @@
   }
 
   &__text {
-      font-family: Titan One;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #ffffff;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
     @media screen and (min-width: 768px) {
       font-family: Titan One;
       font-style: normal;
@@ -209,14 +209,14 @@
   }
 
   &__big-text {
-      font-family: Titan One;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 96.5%;
-      /* or 46px */
-      text-transform: uppercase;
-      color: #d41443;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 96.5%;
+    /* or 46px */
+    text-transform: uppercase;
+    color: #d41443;
 
     @media screen and (min-width: 768px) {
       font-family: Titan One;
@@ -273,7 +273,7 @@
   // }
 
   &__box-container {
-      display: none;
+    display: none;
     @media screen and (min-width: 768px) {
       width: 51px;
       height: 43px;
@@ -347,8 +347,8 @@
   }
 
   &__pre-button {
-      margin-top: 19px;
-      display: flex;
+    margin-top: 19px;
+    display: flex;
     @media screen and (min-width: 768px) {
       margin-top: 20px;
       display: flex;
@@ -360,24 +360,24 @@
   }
 
   &__button-products {
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 8px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
 
-      padding: 7px 15px;
-      margin-right: 8px;
-      margin-bottom: 160px;
+    padding: 7px 15px;
+    margin-right: 8px;
+    margin-bottom: 160px;
 
-      background: #d41443;
-      border-radius: 20px;
-      justify-content: center;
-      border: none;
+    background: #d41443;
+    border-radius: 20px;
+    justify-content: center;
+    border: none;
     @media screen and (min-width: 768px) {
       font-family: DM Sans;
       font-style: normal;
@@ -426,23 +426,23 @@
   }
 
   &__button {
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 8px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-      color: #d41443;
+    color: #d41443;
 
-      padding: 7px 15px;
+    padding: 7px 15px;
 
-      background: #ffffff;
-      border-radius: 20px;
-      justify-content: center;
-      border: none;
+    background: #ffffff;
+    border-radius: 20px;
+    justify-content: center;
+    border: none;
     @media screen and (min-width: 768px) {
       font-family: DM Sans;
       font-style: normal;
@@ -501,7 +501,7 @@
   }
 
   &__pre-title {
-      display: none;
+    display: none;
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -585,41 +585,41 @@
   }
 
   &__modal {
-    width: 100%;
+    width: 250px;
+    height: 100%;
+    background-color: #e17992;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    // padding: 0px 21px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0);
+    &.is-hidden {
+      transform: translateX(110%);
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 254px;
       height: 100%;
       background-color: #e17992;
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
 
       z-index: 999;
       display: flex;
       justify-content: space-between;
-      padding: 21px 23px;
-      transition-property: transform;
-      transition-duration: 250ms;
-      transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateX(0);
-      &.is-hidden {
-        transform: translateX(110%);
-        transition-property: transform;
-        transition-duration: 250ms;
-        transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
-        opacity: 0;
-      }
-
-    @media screen and (min-width: 768px) {
-      width: 100vw;
-      height: 100vh;
-      background-color: #e17992;
-      position: fixed;
-      top: 0;
-      left: 0;
-
-      z-index: 999;
-      display: flex;
-      justify-content: space-between;
-      padding: 24px 23px;
+      // padding: 0px 24px;
       transition-property: transform;
       transition-duration: 250ms;
       transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
@@ -634,26 +634,29 @@
   }
 
   &__button {
-  width: 209px;
-  height: 44px;
-  background: #ffffff;
-  border-radius: 22px;
-  border: none;
-  align-items: center;
-  justify-content: center;
+    @media screen and (min-width: 320px) {
+      width: 209px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 22px;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      display: block;
 
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #d41443;
-  margin-bottom: 32px;
-  margin-top: 60px;
+      color: #d41443;
+      margin-bottom: 19px;
+      margin-top: 60px;
+      margin-left: 21px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 186px;
@@ -673,7 +676,9 @@
       text-align: center;
 
       color: #d41443;
-      margin-bottom: 32px;
+      margin-bottom: 19px;
+      margin-top: 60px;
+      margin-left: 34px;
     }
   }
 
@@ -715,7 +720,10 @@
 
 .mobile-navigation {
   &__li {
-    margin-bottom: 22px;
+    display: flex;
+    width: 254px;
+    height: 42px;
+    border: 1px solid #e18298;
   }
   &__item {
     font-family: DM Sans;
@@ -725,6 +733,7 @@
     line-height: 18px;
     display: flex;
     align-items: center;
+    margin-left: 24px;
 
     color: #ffffff;
     &:focus,
@@ -735,13 +744,28 @@
 }
 
 .mobile-menu-close-btn {
-  // width: 40px;
-  // height: 40px;
-  position: relative;
-  // top: -30px;
-  // right: -30px;
-  background-color: transparent;
-  border: transparent;
+  @media screen and (min-width: 320px) {
+    margin-top: 35px;
+    margin-left: -40px;
+    // width: 40px;
+    // height: 40px;
+    position: relative;
+    // top: -30px;
+    // right: -30px;
+    background-color: transparent;
+    border: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+    margin-left: -50px;
+    // width: 40px;
+    // height: 40px;
+    position: relative;
+    // top: -30px;
+    // right: -30px;
+    background-color: transparent;
+    border: transparent;
+  }
 }
 .mobile-menu-btn__close-icon {
   width: 14px;
@@ -761,9 +785,9 @@
 }
 
 .mobile-menu {
-    margin-right: 0px;
-  
+  margin-right: 5px;
+
   @media screen and (min-width: 768px) {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 }
