@@ -26,8 +26,6 @@
   /*  Установаем ширину окна  */
   width: 100%;
   max-width: 500px;
-  
-  
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -96,16 +94,11 @@ modal__cross:focus {
   fill: var(--accent-color);
 }
 
-
-
-
 .modal__form {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .modal__field {
   position: relative;
@@ -132,7 +125,6 @@ modal__cross:focus {
 .modal__wrap {
   position: relative;
 }
-
 
 .modal__input {
   display: block;
@@ -176,8 +168,8 @@ modal__cross:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal__button{
-  width:  160px ;
+.modal__button {
+  width: 160px;
   align-items: center;
   margin: 0 auto;
 }
